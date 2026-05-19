@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page metadata and shared stylesheet link. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Pollution | BlueLoop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page report-page">
+  <!-- Site header with brand identity and main navigation. -->
+  <header class="site-header">
+    <!-- Navigation links connect all pages in the BlueLoop website. -->
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="index.html">BlueLoop</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="problem.html">Problem</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a class="active" href="report.html">Report Pollution</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+        <li><a href="data.html">Data Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="inner-hero compact-hero">
+    <p class="eyebrow">Report pollution</p>
+    <h1>Submit clear evidence from Bahrain's coast.</h1>
+    <p>Your report helps BlueLoop identify pollution hotspots and guide cleanup activity.</p>
+  </div>
+
+  <!-- Report page content uses a form and instruction split layout. -->
+  <main class="inner-main report-layout">
+    <section class="report-split">
+      <div class="form-panel">
+        <h2>Pollution report form</h2>
+        <p>Share what you saw, where you saw it, and any image evidence that can help verify the report.</p>
+
+        <!-- Form fields allow users to submit pollution observations. -->
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Reporter information</legend>
+            <p>
+              <label for="reporter-name">Full Name</label><br>
+              <input type="text" id="reporter-name" name="reporter-name" required>
+            </p>
+            <p>
+              <label for="reporter-email">Email Address</label><br>
+              <input type="email" id="reporter-email" name="reporter-email" required>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pollution details</legend>
+            <p>
+              <label for="pollution-type">Type of Pollution</label><br>
+              <select id="pollution-type" name="pollution-type" required>
+                <option value="">Select a type</option>
+                <option value="plastic-waste">Plastic waste</option>
+                <option value="oil-pollution">Oil pollution</option>
+                <option value="fishing-gear">Abandoned fishing gear</option>
+                <option value="chemical-waste">Chemical waste</option>
+                <option value="other">Other</option>
+              </select>
+            </p>
+            <p>
+              <label for="location">Location</label><br>
+              <input type="text" id="location" name="location" placeholder="Beach, coastline, or nearby landmark" required>
+            </p>
+            <p>
+              <label for="report-date">Date Observed</label><br>
+              <input type="date" id="report-date" name="report-date" required>
+            </p>
+            <p>
+              <label for="description">Description</label><br>
+              <textarea id="description" name="description" rows="6" required></textarea>
+            </p>
+            <p>
+              <label for="evidence">Upload Image Evidence</label><br>
+              <input type="file" id="evidence" name="evidence" accept="image/*">
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Submit Report</button>
+          </p>
+        </form>
+      </div>
+
+      <aside class="tips-panel">
+        <p class="eyebrow">Reporting tips</p>
+        <h2>Make your report useful.</h2>
+        <ul>
+          <li>Take a clear photo from a safe distance.</li>
+          <li>Include a landmark or location description.</li>
+          <li>Describe the pollution type and approximate amount.</li>
+          <li>Do not enter unsafe water or restricted areas.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="next-steps">
+      <h2>What happens next?</h2>
+      <div>
+        <article><strong>1</strong><span>BlueLoop reviews the report details and evidence.</span></article>
+        <article><strong>2</strong><span>Verified reports help identify cleanup priorities.</span></article>
+        <article><strong>3</strong><span>Useful submissions can earn reward points.</span></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with copyright and page-specific closing message. -->
+  <footer>
+    <p>&copy; 2026 BlueLoop. Every report helps protect Bahrain's marine environment.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
